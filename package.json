@@ -1,0 +1,24 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run webpack\"",
+    "server": "webpack-dev-server --inline --open --hot",
+    "webpack": "webpack --progress --watch"
+  },
+  "author": "Wellerson Roberto <wellerson010@hotmail.com> (http://www.wellerson.com.br/)",
+  "license": "ISC",
+  "dependencies": {
+    "phaser-ce": "^2.8.1"
+  },
+  "devDependencies": {
+    "expose-loader": "^0.7.3",
+    "ts-loader": "^2.2.0",
+    "typescript": "^2.3.4",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}
