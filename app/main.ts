@@ -24,5 +24,5 @@ class SimpleGame {
 window.onload = () => {
  
     var game = new SimpleGame();
-    alert('ass');
+    alert('assdc');
 };

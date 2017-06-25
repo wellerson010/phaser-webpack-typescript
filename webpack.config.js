@@ -7,6 +7,12 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: "main.js"
     },
+    devServer: {
+    //    contentBase: path.join(__dirname, "dist"),
+        publicPath: '/dist/',
+        compress: true,
+        port: 9000
+    },
     resolve: {
         extensions: [".ts", ".tsx", ".js"],
         alias: {
@@ -18,9 +24,9 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.ts?$/, loader: "ts-loader" },
-           /* { test: /pixi\.js/, loader: 'expose-loader', options: 'PIXI' },
-            { test: /phaser-split\.js$/, loader: 'expose-loader', options: 'Phaser' },
-            { test: /p2\.js/, loader: 'expose-loader', options: 'p2' }, */
+            /* { test: /pixi\.js/, loader: 'expose-loader', options: 'PIXI' },
+             { test: /phaser-split\.js$/, loader: 'expose-loader', options: 'Phaser' },
+             { test: /p2\.js/, loader: 'expose-loader', options: 'p2' }, */
 
             /*{ test: /pixi\.js/, use: [{loader: 'expose-loader', options: 'PIXI'}] },
             { test: /phaser-split\.js$/, use: [{loader: 'expose-loader', options: 'Phaser'}] },
