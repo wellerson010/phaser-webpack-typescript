@@ -1,6 +1,8 @@
 import 'p2';
 import 'pixi';
+
 import * as Phaser from 'phaser-ce';
+
 
 class SimpleGame {
  
@@ -22,7 +24,5 @@ class SimpleGame {
 }
  
 window.onload = () => {
- 
     var game = new SimpleGame();
-    alert('assdc');
 };
